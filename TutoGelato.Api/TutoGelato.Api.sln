@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoGelato.Api", "TutoGelato.Api.csproj", "{7A80AB9F-FE88-445F-AC89-82E1A632480F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TutoGelato.Api", "TutoGelato.Api.csproj", "{7A80AB9F-FE88-445F-AC89-82E1A632480F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoGelato.Borders", "..\TutoGelato.Borders\TutoGelato.Borders.csproj", "{492C6E5F-99BF-4D6A-AC7A-E87A8A2A771D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoGelato.Entities", "..\TutoGelato.Entities\TutoGelato.Entities.csproj", "{97026E96-E514-4FFF-BD0C-A520C3FBA9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoGelato.UseCases", "..\TutoGelato.UseCases\TutoGelato.UseCases.csproj", "{69BAA293-58EF-4C4C-9C24-2F622F3DAB98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutoGelato.Repositories", "..\TutoGelato.Repositories\TutoGelato.Repositories.csproj", "{853D4CA7-5D13-4A91-89E4-AFF4AEC3FC9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{7A80AB9F-FE88-445F-AC89-82E1A632480F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A80AB9F-FE88-445F-AC89-82E1A632480F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A80AB9F-FE88-445F-AC89-82E1A632480F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{492C6E5F-99BF-4D6A-AC7A-E87A8A2A771D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{492C6E5F-99BF-4D6A-AC7A-E87A8A2A771D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{492C6E5F-99BF-4D6A-AC7A-E87A8A2A771D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{492C6E5F-99BF-4D6A-AC7A-E87A8A2A771D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97026E96-E514-4FFF-BD0C-A520C3FBA9C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97026E96-E514-4FFF-BD0C-A520C3FBA9C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97026E96-E514-4FFF-BD0C-A520C3FBA9C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97026E96-E514-4FFF-BD0C-A520C3FBA9C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69BAA293-58EF-4C4C-9C24-2F622F3DAB98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69BAA293-58EF-4C4C-9C24-2F622F3DAB98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69BAA293-58EF-4C4C-9C24-2F622F3DAB98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69BAA293-58EF-4C4C-9C24-2F622F3DAB98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853D4CA7-5D13-4A91-89E4-AFF4AEC3FC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853D4CA7-5D13-4A91-89E4-AFF4AEC3FC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853D4CA7-5D13-4A91-89E4-AFF4AEC3FC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853D4CA7-5D13-4A91-89E4-AFF4AEC3FC9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
