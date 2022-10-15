@@ -17,9 +17,17 @@ namespace TutoGelato.UseCases
         {
             if (sorvete.Sabor != string.Empty && sorvete.Cor != string.Empty)
             {
-                sorvete.Id = Guid.NewGuid();
+                Sorvete sorveteExistente = _sorveteRepository.BuscarByMarcaSaborCor(sorvete.Marca, sorvete.Sabor, sorvete.Cor);
 
-                return _sorveteRepository.Criar(sorvete);
+                if(sorveteExistente == null)
+                {
+                    sorvete.Id = Guid.NewGuid();
+
+                    return _sorveteRepository.Criar(sorvete);
+                }
+
+                return sorveteExistente.Id;
+                
             }
             else 
             {

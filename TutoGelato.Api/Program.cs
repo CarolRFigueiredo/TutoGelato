@@ -11,7 +11,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddScoped<ICriarSorveteUseCase, CriarSorveteUseCase>();
+builder.Services.AddScoped<IBuscarSorveteUseCase, BuscarSorveteUseCase>();
+
 builder.Services.AddSingleton<ISorveteRepository, SorveteRepository>();
 
 var app = builder.Build();
