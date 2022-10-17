@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICriarSorveteUseCase, CriarSorveteUseCase>();
 builder.Services.AddScoped<IBuscarSorveteUseCase, BuscarSorveteUseCase>();
+builder.Services.AddScoped<IListarSorvetesUseCase, ListarSorvetesUseCase>();
 
 builder.Services.AddSingleton<ISorveteRepository, SorveteRepository>();
 
