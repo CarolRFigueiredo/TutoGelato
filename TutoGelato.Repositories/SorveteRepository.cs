@@ -31,5 +31,10 @@ namespace TutoGelato.Repositories
 
             return sorvete.Id;
         }
+
+        public List<Sorvete> Listar()
+        {
+            return sorvetes;
+        }
     }
 }

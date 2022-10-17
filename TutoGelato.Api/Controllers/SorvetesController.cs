@@ -10,11 +10,13 @@ namespace TutoGelato.Api.Controllers
     {
         public readonly ICriarSorveteUseCase _criarSorveteUseCase;
         public readonly IBuscarSorveteUseCase _buscarSorveteUseCase;
+        public readonly IListarSorvetesUseCase _listarSorvetesUseCase;
 
-        public SorvetesController(ICriarSorveteUseCase criarSorveteUseCase, IBuscarSorveteUseCase buscarSorveteUseCase)
+        public SorvetesController(ICriarSorveteUseCase criarSorveteUseCase, IBuscarSorveteUseCase buscarSorveteUseCase, IListarSorvetesUseCase listarSorvetesUseCase)
         {
             _criarSorveteUseCase = criarSorveteUseCase;
             _buscarSorveteUseCase = buscarSorveteUseCase;
+            _listarSorvetesUseCase = listarSorvetesUseCase;
         }
 
         [HttpPost]
@@ -28,5 +30,12 @@ namespace TutoGelato.Api.Controllers
         {
             return _buscarSorveteUseCase.Executar(id);
         }
+
+        [HttpGet]
+        public List<Sorvete> Listar()
+        {
+            return _listarSorvetesUseCase.Executar();
+        }
+            
     }
 }
